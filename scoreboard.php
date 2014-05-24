@@ -13,3 +13,11 @@ usort($scores, function($a, $b) {
   return $a[1] < $b[1];
 });
 
+foreach( $scores as $idx => $b ) {
+  if( $b[0] == "Zeta Minor" )
+  {
+    print '* ';
+  }
+
+  print "{$b[0]} - {$b[1]}\n";
+}
